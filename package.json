@@ -1,0 +1,21 @@
+{
+  "name": "asana-mcp-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Mykyta Bereziuk <nikitber@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsx ./src/index.ts",
+    "dev": "tsx watch ./src/index.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.7.0",
+    "asana": "^3.0.16",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/asana": "^0.18.16",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}
