@@ -3,12 +3,14 @@ import { connectGetTask } from "./get-task";
 import { connectGetTasksByProject } from "./get-tasks-by-project";
 import { connectGetProjects } from "./get-projects";
 import { connectGetTasksBySection } from "./get-tasks-by-section";
+import { connectGetSectionsByProject } from "./get-sections-by-project";
 
 const toolConnectors: ServerConnector[] = [
   connectGetTask,
   connectGetTasksByProject,
   connectGetProjects,
   connectGetTasksBySection,
+  connectGetSectionsByProject,
 ];
 
 export const connectTools: ServerConnector = (server, context) => {
