@@ -98,14 +98,14 @@ declare module "asana" {
   >;
 
   export class TasksApi {
-    async getTask(taskId: string, options?: unknown): Promise<Response<Task>>;
+    getTask(taskId: string, options?: unknown): Promise<Response<Task>>;
 
-    async getTasksForProject(
+    getTasksForProject(
       projectId: string,
       paginationParams: PaginationParams
     ): Promise<PaginatedResponse<TaskPreview>>;
 
-    async getTasksForSection(
+    getTasksForSection(
       sectionId: string,
       params: PaginationParams & { opt_fields?: string }
     ): Promise<PaginatedResponse<TaskPreview>>;
@@ -152,7 +152,7 @@ declare module "asana" {
   type SectionPreview = Pick<Section, "gid" | "name" | "resource_type">;
 
   export class SectionsApi {
-    async getSectionsForProject(
+    getSectionsForProject(
       projectId: string,
       paginationParams: PaginationParams
     ): Promise<PaginatedResponse<SectionPreview>>;
