@@ -181,18 +181,6 @@
   resolved "https://registry.yarnpkg.com/@nicolo-ribaudo/chokidar-2/-/chokidar-2-2.1.8-no-fsevents.3.tgz#323d72dd25103d0c4fbdce89dadf574a787b1f9b"
   integrity sha512-s88O1aVtXftvp5bCPB7WnmXc5IwOZZ7YPuwNPt+GtOOXpPvad1LfbmjYv+qII7zP6RU2QGnqve27dnLycEnyEQ==
 
-"@types/asana@^0.18.16":
-  version "0.18.16"
-  resolved "https://registry.yarnpkg.com/@types/asana/-/asana-0.18.16.tgz#e3470eb74f25a73135390b116e24453b0839443d"
-  integrity sha512-BaDrmvO8rTfj9ZRzuXP+i0UlAmQkkSgJKxaNmWa4xpQwuQVoBbCJPHF57aKjaRtsdX1YqfdimVTY3zCmnm5+5w==
-  dependencies:
-    "@types/bluebird" "*"
-
-"@types/bluebird@*":
-  version "3.5.42"
-  resolved "https://registry.yarnpkg.com/@types/bluebird/-/bluebird-3.5.42.tgz#7ec05f1ce9986d920313c1377a5662b1b563d366"
-  integrity sha512-Jhy+MWRlro6UjVi578V/4ZGNfeCOcNCp0YaFNIUGFKlImowqwb1O/22wDVk3FDGMLqxdpOV3qQHD5fPEH4hK6A==
-
 accepts@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/accepts/-/accepts-2.0.0.tgz#bbcf4ba5075467f3f2131eab3cffc73c2f5d7895"

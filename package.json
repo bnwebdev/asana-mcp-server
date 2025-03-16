@@ -14,7 +14,6 @@
     "zod": "^3.24.2"
   },
   "devDependencies": {
-    "@types/asana": "^0.18.16",
     "tsx": "^4.19.3",
     "typescript": "^5.8.2"
   }
