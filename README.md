@@ -34,7 +34,7 @@ ASANA_TOKEN=your_asana_personal_access_token
 or
 
 ```bash
-env ASANA_TOKEN=your_asana_personal_access_token npx tiny-asana-mcp-server
+env ASANA_TOKEN=your_asana_personal_access_token npx -y tiny-asana-mcp-server
 ```
 
 You can obtain your Asana Personal Access Token from [Asana Developer Console](https://app.asana.com/0/developer-console).
