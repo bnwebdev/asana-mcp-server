@@ -1,6 +1,7 @@
 import { z } from "zod";
 
 import { createTextContent } from "../utils/create-text-content";
+import { getName } from "../utils/get-name";
 import { ServerConnector } from "../types";
 
 export const connectGetSectionsByProject: ServerConnector = (
@@ -10,7 +11,7 @@ export const connectGetSectionsByProject: ServerConnector = (
   const { asana } = context;
 
   server.tool(
-    "get_sections_by_project",
+    getName("get_sections_by_project"),
     "This tool gets sections from a asana project",
     {
       project_id: z.string(),

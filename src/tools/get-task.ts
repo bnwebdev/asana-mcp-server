@@ -1,13 +1,14 @@
 import { z } from "zod";
 
-import { ServerConnector } from "../types";
 import { createTextContent } from "../utils/create-text-content";
+import { getName } from "../utils/get-name";
+import { ServerConnector } from "../types";
 
 export const connectGetTask: ServerConnector = (server, context) => {
   const { asana } = context;
 
   server.tool(
-    "get_task",
+    getName("get_task"),
     "This tool gets a task from asana",
     { task_id: z.string() },
     async ({ task_id }) => {
