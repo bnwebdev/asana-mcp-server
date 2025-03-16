@@ -1,10 +1,19 @@
-import config from "../../../interactor-ai/.commit.json"; // TODO: use envs
-import { AsanaService } from "./lib/asana/service";
+import dotenv from "dotenv";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio";
+
+import { AsanaService } from "./lib/asana/service";
+import { configValidationSchema } from "./schemas/config";
 import { connectTools } from "./tools";
 
 const bootstrap = async () => {
+  dotenv.config();
+
+  const config = configValidationSchema.parse(process.env);
+
+  const asanaService = new AsanaService(config.ASANA_TOKEN);
+  const context = { asana: asanaService };
+
   const server = new McpServer(
     {
       name: "Asana MCP Server",
@@ -18,9 +27,7 @@ const bootstrap = async () => {
     }
   );
 
-  const asanaService = new AsanaService(config.asana.apiKey);
-
-  connectTools(server, { asana: asanaService });
+  connectTools(server, context);
 
   const transport = new StdioServerTransport();
 
