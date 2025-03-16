@@ -23,7 +23,8 @@
     "build": "tsc",
     "prepare": "yarn build",
     "start": "tsx ./src/index.ts",
-    "dev": "tsx watch ./src/index.ts"
+    "dev": "tsx watch ./src/index.ts",
+    "inspector": "npx @modelcontextprotocol/inspector dist/index.js"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.7.0",
