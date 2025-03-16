@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 import dotenv from "dotenv";
-import { McpServer } from "@modelcontextprotocol/sdk/server/mcp";
-import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio";
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 
 import { AsanaService } from "./lib/asana/service";
 import { configValidationSchema } from "./schemas/config";

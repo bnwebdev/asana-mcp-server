@@ -1,6 +1,6 @@
 {
   "name": "tiny-asana-mcp-server",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "MCP server implementation for Asana integration",
   "main": "dist/index.js",
   "bin": {
@@ -19,10 +19,11 @@
     "ai",
     "assistant"
   ],
+  "type": "module",
   "scripts": {
-    "build": "tsc",
+    "build": "node build.js",
     "prepare": "yarn build",
-    "start": "tsx ./src/index.ts",
+    "start": "node dist/index.js",
     "dev": "tsx watch ./src/index.ts",
     "inspector": "npx @modelcontextprotocol/inspector dist/index.js"
   },
@@ -34,6 +35,8 @@
   },
   "devDependencies": {
     "@types/node": "^22.13.10",
+    "esbuild": "^0.25.1",
+    "esbuild-register": "^3.6.0",
     "tsx": "^4.19.3",
     "typescript": "^5.8.2"
   }
