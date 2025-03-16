@@ -44,7 +44,7 @@ You can obtain your Asana Personal Access Token from [Asana Developer Console](h
 ### Starting the Server
 
 ```bash
-asana-mcp
+asana-mcp-server
 ```
 
 The server will start and connect to the MCP client, allowing AI assistants to interact with your Asana workspace.

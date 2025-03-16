@@ -4,13 +4,13 @@
   "description": "MCP server implementation for Asana integration",
   "main": "dist/index.js",
   "bin": {
-    "asana-mcp": "./dist/index.js"
+    "asana-mcp-server": "./dist/index.js"
   },
   "author": "Mykyta Bereziuk <nikitber@hotmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nikitabereziuk/asana-mcp-server"
+    "url": "https://github.com/bnwebdev/asana-mcp-server"
   },
   "keywords": [
     "asana",
