@@ -1,1 +1,1 @@
-export const getName = (name: string) => `asana.${name}`;
+export const getName = (name: string) => `asana_${name}`;
