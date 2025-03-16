@@ -15,7 +15,7 @@ export const connectGetTask: ServerConnector = (server, context) => {
         content: [
           {
             type: "text",
-            text: JSON.stringify(task),
+            text: JSON.stringify(task, null, 2),
           },
         ],
       };
