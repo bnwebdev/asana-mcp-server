@@ -1,4 +1,6 @@
 import { z } from "zod";
+
+import { createTextContent } from "../utils/create-text-content";
 import { ServerConnector } from "../types";
 
 export const connectGetSectionsByProject: ServerConnector = (
@@ -24,9 +26,7 @@ export const connectGetSectionsByProject: ServerConnector = (
       const { data, next_page } = response._response;
 
       return {
-        content: [
-          { type: "text", text: JSON.stringify({ data, next_page }, null, 2) },
-        ],
+        content: [createTextContent({ data, next_page })],
       };
     }
   );

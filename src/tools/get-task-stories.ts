@@ -1,4 +1,6 @@
 import { z } from "zod";
+
+import { createTextContent } from "../utils/create-text-content";
 import { ServerConnector } from "../types";
 
 export const connectGetTaskStories: ServerConnector = (server, context) => {
@@ -21,9 +23,7 @@ export const connectGetTaskStories: ServerConnector = (server, context) => {
       const { data, next_page } = comments._response;
 
       return {
-        content: [
-          { type: "text", text: JSON.stringify({ data, next_page }, null, 2) },
-        ],
+        content: [createTextContent({ data, next_page })],
       };
     }
   );

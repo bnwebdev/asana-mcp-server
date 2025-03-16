@@ -1,5 +1,7 @@
 import { z } from "zod";
+
 import { ServerConnector } from "../types";
+import { createTextContent } from "../utils/create-text-content";
 
 export const connectGetTask: ServerConnector = (server, context) => {
   const { asana } = context;
@@ -12,12 +14,7 @@ export const connectGetTask: ServerConnector = (server, context) => {
       const { data: task } = await asana.tasks.getTask(task_id);
 
       return {
-        content: [
-          {
-            type: "text",
-            text: JSON.stringify(task, null, 2),
-          },
-        ],
+        content: [createTextContent(task)],
       };
     }
   );

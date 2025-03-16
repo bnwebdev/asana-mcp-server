@@ -1,5 +1,7 @@
 import { z } from "zod";
+
 import { ServerConnector } from "../types";
+import { createTextContent } from "../utils/create-text-content";
 
 export const connectGetTasksByProject: ServerConnector = (server, context) => {
   const { asana } = context;
@@ -21,12 +23,7 @@ export const connectGetTasksByProject: ServerConnector = (server, context) => {
       const { data, next_page } = response._response;
 
       return {
-        content: [
-          {
-            type: "text",
-            text: JSON.stringify({ data, next_page }, null, 2),
-          },
-        ],
+        content: [createTextContent({ data, next_page })],
       };
     }
   );
