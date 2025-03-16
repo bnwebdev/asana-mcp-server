@@ -14,13 +14,13 @@ A Model Context Protocol (MCP) server implementation for Asana integration. This
 You can install this package globally using npm:
 
 ```bash
-npm install -g asana-mcp-server
+npm install -g tiny-asana-mcp-server
 ```
 
 Or run it directly using npx:
 
 ```bash
-npx asana-mcp-server
+npx tiny-asana-mcp-server
 ```
 
 ## Configuration
@@ -34,7 +34,7 @@ ASANA_TOKEN=your_asana_personal_access_token
 or
 
 ```bash
-env ASANA_TOKEN=your_asana_personal_access_token npx asana-mcp-server
+env ASANA_TOKEN=your_asana_personal_access_token npx tiny-asana-mcp-server
 ```
 
 You can obtain your Asana Personal Access Token from [Asana Developer Console](https://app.asana.com/0/developer-console).
@@ -44,7 +44,7 @@ You can obtain your Asana Personal Access Token from [Asana Developer Console](h
 ### Starting the Server
 
 ```bash
-asana-mcp-server
+tiny-asana-mcp-server
 ```
 
 The server will start and connect to the MCP client, allowing AI assistants to interact with your Asana workspace.
@@ -73,8 +73,8 @@ To set up the development environment:
 1. Clone the repository:
 
 ```bash
-git clone git@github.com:bnwebdev/asana-mcp-server.git
-cd asana-mcp-server
+git clone git@github.com:bnwebdev/tiny-asana-mcp-server.git
+cd tiny-asana-mcp-server
 ```
 
 2. Install dependencies:
@@ -95,7 +95,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/bnwebdev/asana-mcp-server/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/bnwebdev/tiny-asana-mcp-server/blob/main/LICENSE) file for details.
 
 ### Third-Party Licenses
 
