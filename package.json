@@ -1,6 +1,6 @@
 {
   "name": "tiny-asana-mcp-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server implementation for Asana integration",
   "main": "dist/index.js",
   "bin": {
